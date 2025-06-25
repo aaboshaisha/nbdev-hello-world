@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "hello",
+    "section": "",
+    "text": "source\n\nsay_hello\n\n say_hello (to)\n\nSay hello to somebody\n\nsay_hello('Salma')\n\n'Hello Salma!'\n\n\n\nsource\n\n\nsay_goodbye\n\n say_goodbye (to)\n\nSay goodbye to somebody\n\nsay_goodbye('Menna')\n\n'Goodbye Menna'\n\n\n\np = Person('Salma', 3)\np\n\nName: Salma, Age:3\n\n\n\nsource\n\n\nPerson\n\n Person (name:str, age:int)\n\nA dummy class to test.\nWe can make the documentation nicer by adding a comment to each parameter that then get nicely rendered by nbdev\n\nPerson2('Menna', 38)\n\nName: Menna, Age:38\n\n\n\nsource\n\n\nPerson2\n\n Person2 (name:str, age:int)\n\nA dummy class to test.\n\n\n\n\nType\nDetails\n\n\n\n\nname\nstr\na person’s name\n\n\nage\nint\na person’s age\n\n\n\nTo see where some func / obj comes from:\n\nSignature:\nshow_doc(\n    sym,\n    renderer=None,\n    name: 'str | None' = None,\n    title_level: 'int' = 3,\n)\nDocstring: Show signature and docstring for `sym`\nFile:      ~/workspace/envs/claude-env/lib/python3.13/site-packages/nbdev/showdoc.py\nType:      function\n\n\n# or see source code\nsay_hello??\n\n\nSignature: say_hello(to)\nSource:   \ndef say_hello(to):\n    \"Say hello to somebody\"\n    return f\"Hello {to}!\"\nFile:      /var/folders/9p/5ycxgmps44zc3f0y6vljhp2h0000gn/T/ipykernel_46397/180399582.py\nType:      function\n\n\n\nIn other languages like C++, u can define methods outside their class. In Python, we can use a util from fastcore to do so:\nThis gives us a @patch decorator\n\nsource\n\n\nPerson.__eq__\n\n Person.__eq__ (other:__main__.Person)\n\nReturn self==value.\n\nPerson('Salma', 3) == Person('Salma', 3)\n\nTrue\n\n\n\nPerson('Salma', 3) == Person('Salma', 4)\n\nFalse\n\n\nWhy do this?\nThis allows us to group same functionalities together eg all comparison operators in one place\n\nComparison Operators:\n\nsource\n\n\n\nPerson.__lt__\n\n Person.__lt__ (other:__main__.Person)\n\nReturn self&lt;value.\n\nassert Person('Salma', 3) &lt; Person('Salma', 4)\n\n\nsource\n\n\nPerson.__gt__\n\n Person.__gt__ (other:__main__.Person)\n\nReturn self&gt;value.\n\nassert Person('Salma', 3) &gt; Person('Aya', 3)",
+    "crumbs": [
+      "hello"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev-hello-world",
+    "section": "",
+    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/aaboshaisha/nbdev-hello-world.git\nor from conda\n$ conda install -c aaboshaisha nbdev_hello_world\nor from pypi\n$ pip install nbdev_hello_world",
+    "crumbs": [
+      "nbdev-hello-world"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "nbdev-hello-world",
+    "section": "",
+    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/aaboshaisha/nbdev-hello-world.git\nor from conda\n$ conda install -c aaboshaisha nbdev_hello_world\nor from pypi\n$ pip install nbdev_hello_world",
+    "crumbs": [
+      "nbdev-hello-world"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev-hello-world",
+    "section": "How to use",
+    "text": "How to use\nThis provides a say_hello function to say hell to someone:\n\nsay_hello('Salma')\n\n'Hello Salma!'\n\n\n\nsay_goodbye('Menna')\n\n'Goodbye Menna'\n\n\n\np = Person('Jane', 33)\n\n\np\n\nName: Jane, Age:33",
+    "crumbs": [
+      "nbdev-hello-world"
+    ]
+  }
+]
