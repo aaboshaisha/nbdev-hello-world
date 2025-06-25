@@ -58,10 +58,12 @@ you can find package manager specific guidelines on
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+This provides a
+[`say_hello`](https://aaboshaisha.github.io/nbdev-hello-world/hello.html#say_hello)
+function to say hell to someone:
 
 ``` python
-1+1
+say_hello('Salma')
 ```
 
-    2
+    'Hello Salma!'
